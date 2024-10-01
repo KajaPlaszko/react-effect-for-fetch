@@ -1,5 +1,5 @@
 export default function UserListItem({user}) {
-    const {firstname, lastname, 
+    const {firstName, lastName, 
         favouriteColour, email} = user;
 
     return(
@@ -8,9 +8,9 @@ export default function UserListItem({user}) {
 favouriteColour}}>
         <img
           src={`https://www.gravatar.com/avatar/${email}?s=120&d=identicon`}
-          alt={firstname}
+          alt={firstName}
         />
-        <h3>Name: {firstname} {lastname}</h3>
+        <h3>Name: {firstName} {lastName}</h3>
         <p>Email: {email}</p>
       </li>
     </>
